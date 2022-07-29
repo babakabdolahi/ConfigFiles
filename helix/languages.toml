@@ -1,0 +1,29 @@
+[[language]]
+name = "perl"
+file-types = ["pl", "pm"]
+# roots = util.find_git_ancestor
+# language-server = { command = "pls", args = ["root_dir", "util.find_git_ancestor"] }
+language-server = { command = "pls" }
+# [config.settings]
+# cmd = '/home/babak/perl5/bin/pls'
+[config.settings.perl]
+# inc = '~/perl5/lib/perl5'
+# cwd = '~/perlcheck'
+perlcritic = { enabled = true, perlcriticrc = '~/.perlcriticrc' }
+perltidyrc = '~/.perltidyrc'
+syntax = { enabled = true }
+
+[[language]]
+name = "bash"
+language-server = { command = "bash-language-server", args = ["start"]}
+
+[[language]]
+name = "sql"
+language-server = { command = "sql-language-server", args = ["start"]}
+
+[[language]]
+name = "c"
+file-types = ["c", "cpp"]
+roots = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]
+language-server = { command = "clangd" }
+

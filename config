@@ -1,0 +1,26 @@
+# Config from Mat
+Host ???
+  HostName qa%h
+  User babak
+  forwardagent yes
+  AddKeysToAgent yes
+  ServerAliveInterval 60
+  ServerAliveCountMax 10
+  IdentityFile ~/.ssh/id_rsa
+
+# regentmarkets git
+Host github.com
+ HostName github.com
+ User git
+ AddKeysToAgent yes
+ IdentitiesOnly yes
+ IdentityFile ~/.ssh/id_rsa
+
+
+# Personal GitHub account
+Host github-babak.com
+ HostName github.com
+ User git
+ AddKeysToAgent yes
+ IdentitiesOnly yes
+ IdentityFile ~/.ssh/id_ed25519_personal.pub
