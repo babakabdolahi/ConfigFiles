@@ -8,7 +8,7 @@ Host ???
   ServerAliveCountMax 10
   IdentityFile ~/.ssh/id_rsa
 
-# regentmarkets git
+# work git
 Host github.com
  HostName github.com
  User git

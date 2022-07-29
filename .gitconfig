@@ -1,0 +1,10 @@
+[user]
+	name = babakabdolahi
+	email = babak.abi86@gmail.com
+[core]
+	editor = vim
+[github]
+	user = babakabdolahi
+[credential]
+   helper = store
+   helper = cache
