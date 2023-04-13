@@ -25,8 +25,8 @@ let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
 
 "tab size
-:set tabstop=3
-:set shiftwidth=3
+:set tabstop=4
+:set shiftwidth=4
 :set expandtab
 " make goimports to happen on save
 " let g:go_fmt_command = "goimports"
@@ -78,13 +78,14 @@ let g:rustfmt_autosave = 1
 " :nnoremap :pwd  :!pwd
 
 " linting for perl
-let g:ale_linters = {'go': ['gofmt', 'golint', 'go vet', 'gometalinter'], 'perl': ['perl','perlcritic'] }
+let g:ale_linters = {'perl': ['perl','perlcritic'] }
+" let g:ale_linters = {'go': ['gofmt', 'golint', 'go vet', 'gometalinter'], 'perl': ['perl','perlcritic'] }
 
 """""""""""""""""""""""""""""""""""""""""
  " Vim Plug
  call plug#begin('~/.vim/plugged')
 
- Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+"  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
  Plug 'https://github.com/tomtom/tcomment_vim.git'
  Plug 'mattn/emmet-vim'
  Plug 'vim-perl/vim-perl' , { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
