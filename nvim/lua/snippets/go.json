@@ -1,0 +1,7 @@
+{
+  "error check": {
+    "prefix": "ifer",
+    "body": ["if err != nil {", "\treturn $1", "}"],
+    "description": "Go error check"
+  }
+}

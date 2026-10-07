@@ -22,6 +22,8 @@
 
 return {
   { import = "lazyvim.plugins.extras.lang.go" },
+  { import = "lazyvim.plugins.extras.test.core" },
+  { import = "lazyvim.plugins.extras.dap.core" },
 
   -- NOTE: there is no "lang.html" extra -- LazyVim's `lang` category covers
   -- ~40 languages (Go, Rust, Vue, Astro, etc.) but HTML/CSS aren't among
